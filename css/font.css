@@ -1,0 +1,93 @@
+/*Merriweather*/
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../assets/font/Merriweather/Merriweather-Light.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/font/Merriweather/Merriweather-Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../assets/font/Merriweather/Merriweather-Bold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    src: url("../assets/font/Merriweather/Merriweather-Black.woff2") format('woff2');
+}
+
+/*Montserrat*/
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    src: url("../assets/font/Montserrat/Montserrat-VariableFont_wght.woff2") format('woff2');
+}
+
+/*Poppins*/
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    src: url("../assets/font/Poppins/Poppins-Thin.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url("../assets/font/Poppins/Poppins-ExtraLight.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../assets/font/Poppins/Poppins-Light.woff2") format('woff2');}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/font/Poppins/Poppins-Regular.woff2") format('woff2');}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../assets/font/Poppins/Poppins-Medium.woff2") format('woff2');}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url("../assets/font/Poppins/Poppins-SemiBold.woff2") format('woff2');}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../assets/font/Poppins/Poppins-Bold.woff2") format('woff2');}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url("../assets/font/Poppins/Poppins-ExtraBold.woff2") format('woff2');}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url("../assets/font/Poppins/Poppins-Black.woff2") format('woff2');}

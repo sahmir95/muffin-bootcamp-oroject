@@ -81,21 +81,33 @@
     display: flex;
 }
 
-.about-us__description .description__social-media .social-media__logo {
+.about-us__description .description__social-media .social-media__each {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-image: url("../assets/images/transparentbg-aboutus.png");
+    cursor: pointer;
+    width: 43px;
+    height: 43px;
+}
+
+.description__social-media .social-media__each .each__logo-primary {
     border-color: rgba(0, 0, 0, .08);
     box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, .08);
     color: #444;
-    width: 43px;
-    height: 43px;
     margin-right: 2px;
-    cursor: pointer;
 }
 
-.about-us__description .description__social-media .social-media__logo .logo__img {
+.social-media__each .each__logo-primary .each__img {
+    font-size: 1.5rem;
+}
+
+.description__social-media .social-media__each .each__logo-secondary {
+
+}
+
+.social-media__each .each__logo-secondary .each__img {
     font-size: 1.5rem;
 }
 
@@ -152,7 +164,6 @@
     font-size: 1.3rem;
     font-weight: 300;
 }
-
 
 @media screen and (min-width: 1240px) {
 
@@ -377,6 +388,7 @@
 
     .about-us__cards .cards__card-each .card-each__description .description__text {
         font-size: 1.3rem;
+        line-height: 23px;
     }
 }
 
@@ -388,15 +400,15 @@
     }
 
     .about-us__title .title__main {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 
     .about-us__title .title__text {
-        font-size: 3.3rem;
+        font-size: 2.6rem;
     }
 
     .about-us__description {
-        padding-right: 18px;
+        padding-right: 16px;
     }
 
     .about-us__description .description__title {
@@ -404,11 +416,11 @@
     }
 
     .about-us__description .description__title .title__name {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
     }
 
     .about-us__description .description__title .title__text {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 
     .about-us__cards {
@@ -419,11 +431,11 @@
     }
 
     .about-us__cards .cards__card-each {
-        padding: 0 12px;
+        padding: 0 10px;
     }
 
     .about-us__cards .cards__card-each .card-each__description .description__title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
 }

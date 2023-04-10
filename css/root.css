@@ -1,0 +1,22 @@
+:root {
+
+    /*colors*/
+    --primary-green: #20c05c;
+    --primary-main: #222223;
+    --primary-light: #242424;
+    --secondary-dark: #1e1d26;
+
+    --white: #fff;
+
+    --secondary-50: #EAEAEA;
+    --secondary-100: #b3b3b3;
+    --secondary-150: #a8a8a8;
+    --secondary-200: #747474;
+
+    --black: #000;
+
+    /*font-family*/
+    --Merriweather: "Merriweather", "arial", "sans-serif";
+    --Poppins: "Poppins", "arial", "sans-serif";
+    --Montserrat: "Montserrat", "arial", "sans-serif";
+}

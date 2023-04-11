@@ -19,4 +19,10 @@
     --Merriweather: "Merriweather", "arial", "sans-serif";
     --Poppins: "Poppins", "arial", "sans-serif";
     --Montserrat: "Montserrat", "arial", "sans-serif";
+
+    /* font size */
+    --font-size-mobile-header: 37px;
+    --font-size-mobile-para: 13px;
+    --font-size-mobile-title: 13px;
+
 }

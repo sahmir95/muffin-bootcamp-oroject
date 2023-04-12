@@ -278,17 +278,27 @@
     color: var(--primary-green);
     font-size: 20px;
     padding-right: 3.2px;
-    animation: pulse 0.5s normal none 1;
+    animation: pulseout 0.5s normal none 1;
 }
 .card__bot__left:hover > .like__icon {
-    font-variation-settings: 'FILL'1;
+    animation: pulsein 0.5s normal none 1;
+    font-variation-settings: 'FILL' 1;
+
 }
-@keyframes pulse {
+@keyframes pulsein {
     0% {
       font-variation-settings: 'FILL' 0;
     }
     100% {
       font-variation-settings: 'FILL' 1;
+    }
+}
+@keyframes pulseout {
+    0% {
+      font-variation-settings: 'FILL' 1;
+    }
+    100% {
+      font-variation-settings: 'FILL' 0;
     }
 }
 .like__text {
@@ -297,8 +307,9 @@
 .card__bot__right {
     display: flex;
     align-items: center;
-    transition: all 0.5s ease;
     cursor: pointer;
+    border-left: 1px solid rgba(0,0,0,.08);
+    padding-left: 10px;
 }
 .page__icon {
     color: var(--secondary-150);

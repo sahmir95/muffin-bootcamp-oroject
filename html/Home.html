@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../css/Home.css">
     <title>Muffin - Home</title>
 </head>
@@ -385,6 +387,101 @@
     </div>
     <div class="test">
         <p class="test__text">Testimonials</p>
+        <div class="swp">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper__image" src="../assets/images/home-man1.jpg" alt="man">
+                        <div class="slide__in">
+                            <div class="slide__inner">
+                                <blockquote class="slider__quote">
+                                    Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies.
+                                    <span class="material-symbols-rounded quote__icon">
+                                        format_quote
+                                    </span>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="slider__circles">
+                            <div class="slider__circle"></div>
+                            <div class="slider__circle"></div>
+                            <div class="slider__circle"></div>
+                        </div>
+                        <p class="slider__text">Tony Johnson</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper__image" src="../assets/images/home-man2.jpg" alt="man">
+                        <div class="slide__in">
+                            <div class="slide__inner">
+                                <blockquote class="slider__quote">
+                                    Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis.
+                                    <span class="material-symbols-rounded quote__icon">
+                                        format_quote
+                                    </span>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="slider__circles">
+                            <div class="slider__circle"></div>
+                            <div class="slider__circle"></div>
+                            <div class="slider__circle"></div>
+                        </div>
+                        <p class="slider__text">Tony Johnson</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper__image" src="../assets/images/home-man3.jpg" alt="man">
+                        <div class="slide__in">
+                            <div class="slide__inner">
+                                <blockquote class="slider__quote">
+                                    Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum.
+                                    <span class="material-symbols-rounded quote__icon">
+                                        format_quote
+                                    </span>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="slider__circles">
+                            <div class="slider__circle"></div>
+                            <div class="slider__circle"></div>
+                            <div class="slider__circle"></div>
+                        </div>
+                        <p class="slider__text">Tony Johnson</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper__image" src="../assets/images/home-man4.jpg" alt="man">
+                        <div class="slide__in">
+                            <div class="slide__inner">
+                                <blockquote class="slider__quote">
+                                    Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
+                                    <span class="material-symbols-rounded quote__icon">
+                                        format_quote
+                                    </span>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="slider__circles">
+                            <div class="slider__circle"></div>
+                            <div class="slider__circle"></div>
+                            <div class="slider__circle"></div>
+                        </div>
+                        <p class="slider__text">Tony Johnson</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 </body>
 </html>

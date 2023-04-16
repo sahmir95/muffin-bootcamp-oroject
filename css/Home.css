@@ -56,10 +56,20 @@ body {
     padding-right: 33px;
 }
 .welcome__box {
-    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.welcome__box__shadow {
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* mix-blend-mode: multiply; */
+}
+.welcome__box__shadow:hover {
+    width: max-content;
 }
 .welcome__box__h6 {
     color: var(--primary-green);
@@ -90,18 +100,22 @@ body {
 }
 .welcome__box__btn {
     display: flex;
-    margin-bottom: 15px;
-    margin-right: 10px;
+    /* margin-bottom: 15px;
+    margin-right: 10px; */
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
     padding: 10px 20px;
+    /* mix-blend-mode: multiply; */
+    position: relative;
     box-shadow: inset 0 0 0 1px rgba(0,0,0,.03), inset 0px 4px 3px -2px rgba(0,0,0,.07);
 }
 .welcome__box__btns {
     padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .welcome__box__link {
     text-decoration: none;
@@ -117,6 +131,20 @@ body {
     border-radius: 0px 5px 5px 0px;
     background-color: rgba(0,0,0,.05);
 }
+.box__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    mix-blend-mode: multiply;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.2s ease;
+}
+.welcome__box__btn:hover > .box__shadow {
+    width: 100%;
+}
 .box__btn__text {
     padding-right: 40px;
     font-family: var(--Poppins);
@@ -126,6 +154,7 @@ body {
 }
 .btn__aboutus {
     background-color: var(--primary-green);
+    /* mix-blend-mode: multiply; */
 }
 .box__icon {
     color: var(--secondary-200);
@@ -133,6 +162,7 @@ body {
 }
 .btn__catering {
     background-color: var(--secondary-light);
+    /* mix-blend-mode: multiply; */
 }
 .text__aboutus {
     color: var(--white);
@@ -285,37 +315,26 @@ body {
     display: flex;
     align-items: center;
     transition: all 0.5s ease;
-    cursor: pointer;
+    
 }
 .like__icon {
     color: var(--primary-green);
-    font-size: 20px;
-    padding-right: 3.2px;
-    animation: pulseout 0.5s normal none 1;
+    font-size: 16px;
+    cursor: pointer;
 }
-.card__bot__left:hover > .like__icon {
-    animation: pulsein 0.5s normal none 1;
-    font-variation-settings: 'FILL' 1;
-
+.like__icon__fill {
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
-@keyframes pulsein {
-    0% {
-      font-variation-settings: 'FILL' 0;
-    }
-    100% {
-      font-variation-settings: 'FILL' 1;
-    }
+.liked {
+    opacity: 1;
 }
-@keyframes pulseout {
-    0% {
-      font-variation-settings: 'FILL' 1;
-    }
-    100% {
-      font-variation-settings: 'FILL' 0;
-    }
+.card__bot__left:hover .like__icon__fill {
+    opacity: 1;
 }
 .like__text {
     color: var(--secondary-150);
+    cursor: pointer;
 }
 .card__bot__right {
     display: flex;
@@ -349,9 +368,9 @@ body {
     background-image: url(../assets/images/home-top-inside-div.jpg);
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 25px;
+    row-gap: 15px;
     padding-top: 90px;
-    padding-bottom: 75px;
+    padding-bottom: 90px;
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -370,6 +389,7 @@ body {
     letter-spacing: 0px;
     font-family: var(--Merriweather);
     font-weight: 700;
+    padding-bottom: 15px;
 }
 .mid {
     align-self: center;
@@ -412,10 +432,15 @@ body {
 .mid__text2 {
     color: var(--secondary-100);
     font-family: var(--Poppins);
-    font-weight: 300px;
     font-size: 13px;
     line-height: 19px;
     padding: 15PX 0PX;
+    font-weight: 300;
+}
+.mid__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 .mid__bot {
     align-self: center;
@@ -435,7 +460,7 @@ body {
 .mid__bot__title {
     color: var(--white);
     font-family: var(--Merriweather);
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 13px;
     line-height: 19px;
     padding-top: 20px;
@@ -443,7 +468,7 @@ body {
 .mid__bot__text {
     color: var(--secondary-100);
     font-family: var(--Poppins);
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 13px;
     line-height: 19px;
     padding: 15px 0px;
@@ -469,8 +494,8 @@ body {
 .quote__icon {
     font-size: 65px;
     position: absolute;
-    left: -25px;
-    top: -10px;
+    left: -35px;
+    top: -20px;
     color: rgba(0,0,0,.1);
     font-variation-settings:
     'FILL' 1,
@@ -555,6 +580,7 @@ body {
     opacity: 100%;
     height: 12px;
     width: 12px;
+    margin: 0 10px !important;
     background-color: rgba(0,0,0,.15);
 }
 .swiper-pagination-bullet:hover {
@@ -563,8 +589,10 @@ body {
 .swiper-pagination-bullet-active {
     background-color: var(--primary-green);
     border-radius: 0;
-    content: url(../assets/images/home-man1.jpg                             );
+    background: none;
+    content: url(../assets/images/home-house.webp);
 }
 .swiper-pagination-bullet-active:hover {
-    background-color: var(--primary-green);
+    background: none;
+    background-color: none;
 }

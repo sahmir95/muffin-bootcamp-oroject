@@ -26,5 +26,26 @@
     --font-size-mobile-header: 26px;
     --font-size-mobile-para: 13px;
     --font-size-mobile-title: 13px;
+    --font-size-mobile-cap: 12px;
+    --font-size-mobile-icon: 16px;
+    --font-size-mobile-idk: 16.9px;
+    --font-size-mobile-bigicon: 65px;
+    --font-size-mobile-slide: 18px;
+    --font-size-tablet-slide: 23px;
+    --font-size-tablet-idk: 16.9px;
+    --font-size-tablet-header: 33px;
+    --font-size-tablet-para: 15px;
+    --font-size-tablet-quote: 14px;
+    --font-size-laptop-header: 37px;
+    --font-size-laptop-para: 17px;
+    --font-size-laptop-quote: 15px;
+    --font-size-laptop-slide: 26px;
+    --font-size-biglaptop-header: 44px;
+    --font-size-biglaptop-idk: 19.5px;
+    --font-size-biglaptop-para: 20px;
+    --font-size-biglaptop-cap: 17px;
+    --font-size-biglaptop-quote: 15px;
+    --font-size-biglaptop-slide: 30px;
+
 
 }

@@ -220,6 +220,13 @@ body {
     font-weight: 300px;
     color: var(--primary-green);
 }
+.recipies__bot__right:hover > .menu__icon {
+    color: var(--primary-green-light);
+}
+.recipies__bot__right:hover > .recipies__bot__right__text {
+    color: var(--primary-green-light);
+    text-decoration: underline;
+}
 .menu__icon {
     font-size: var(--font-size-mobile-cap);
 }
@@ -355,6 +362,10 @@ body {
 }
 .page__text {
     color: var(--primary-green);
+}
+.page__text__link:hover {
+    text-decoration: underline;
+    color: var(--primary-green-light);
 }
 .top__bot {
     width: 100%;

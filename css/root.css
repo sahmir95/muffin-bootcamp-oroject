@@ -2,6 +2,7 @@
 
     /*colors*/
     --primary-green: #20c05c;
+
     --primary-green-light: #089a3f;
     --primary-main: #222223;
     --primary-light: #242424;
@@ -47,6 +48,4 @@
     --font-size-biglaptop-cap: 17px;
     --font-size-biglaptop-quote: 15px;
     --font-size-biglaptop-slide: 30px;
-
-
 }

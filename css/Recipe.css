@@ -354,18 +354,11 @@
     color: #fff;
 }
 
-.sweeper-container{
-    display: none;
-    cursor: pointer;
-}
-
-.sweeper-img{
+.nextkey{
     display: none;
 }
 
-.sweeper-hover{
-    display: none;
-}
+
 
 .buy_now{
     display: none;
@@ -528,30 +521,89 @@
         padding-bottom: 24px;
     }
 
-    .sweeper-container{
-        display: flex;
-        position: sticky;
+    .nextkey{
+        position: fixed;
+        bottom: 80px;
         left: 0;
-        bottom: 40px;
         height: 80px;
+        display: flex;
     }
-
-    .sweeper{
+    
+    .nextkey--icon{
+        height: 100%;
+        width: 35px;
+        background-color: green;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 35px;
+    }
+    
+    .nextkey--icon span{
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    .nextkey--img{
+        width: 80px;
         height: 100%;
-        background-color: #20c05c;
+        z-index: -1;
+        position: absolute;
+        transform: translateX(-45px);
+        transition: transform 0.3s;
+    }
+    .nextkey--text{
+        position: absolute;
+        width: 170px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        transform: translateX(-180px);
+        z-index: -2;
+        transition: transform 0.3s;
+        padding: 12px 12px;
+    }
+    
+    .nextkey:hover .nextkey--text{
+        transform: translateX(115px);
+    }
+    .nextkey:hover .nextkey--img{
+        transform: translateX(35px);
+    }
+    
+    .nextkey--img img{
+        width: 100%;
+        height: 100%;
     }
 
-    .sweeper-icon{
-        color: #fff;
+    .nextkey_text--type{
+        width: 100%;
+        font-family: 'poppins';
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: black;
+        border-bottom: 1px solid rgb(227, 225, 225);
+        padding-bottom: 6px;
+        letter-spacing: 2px;
+    }
+
+    .nextkey_text--date{
+        width: 100%;
+        font-family: 'Poppins';
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #a8a8a8;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 6px;
     }
 
     .buy_now{
-        position: sticky;
-        left: 100%;
+        position: fixed;
+        right: 0;
         bottom: 120px;
         display: flex;
         flex-direction: column;
@@ -561,6 +613,7 @@
         height: 64px;
         background-color: #80B541;
         border-radius: 3px 0 0 3px;
+        z-index: 2;
     }
 
     .buy-icon{
@@ -782,6 +835,22 @@
         top: -880px;
     }
 
+    .nextkey--text{
+        width: 200px;
+    }
+
+    .nextkey--img{
+        transform: translateX(35px);
+    }
+
+    .nextkey_text--type{
+        font-size: 1.4rem;
+    }
+
+    .nextkey_text--date{
+        font-size: 1.6rem;
+    }
+
     .buy_now{
         bottom: 172px;
     }
@@ -790,64 +859,7 @@
         bottom: 244px;
     }
 
-    .sweeper-img{
-        display: block;
-    }
-
-    .sweeper-hover{
-        width: 200px;
-        height: 100%;
-        transform: scaleX(0);
-        content: "";
-        display: block;
-        position: absolute;
-        left: 130px;
-        background: #fff;
-        transform-origin: left;
-        transition: transform 0.3s;
-        z-index: -2;
-        padding: 12px 16px 16px 16px ;
-    }
-
-    .sweeper-hover_date{
-        padding-top: 6px;
-        display: flex;
-        align-items: center;
-    }
-
-    .sweeper-hover_text{
-        width: 100%;
-        font-family: 'Merriweather';
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: black;
-        border-bottom: 1px solid rgb(227, 225, 225);
-        padding-bottom: 6px;
-        letter-spacing: 2px;
-    }
-
-    .sweeper-hover_date-text{
-        font-family: 'Poppins';
-        font-size: 1.6rem;
-        font-weight: 300;
-        color: #a8a8a8;
-        letter-spacing: 1px;
-        padding-left: 4px;
-    }
-
-    .sweeper-container{
-        transition: 3s all ease-in-out;
-        max-width: 130px;
-    }
-
-    .sweeper-container:hover::after{
-        transform: scaleX(1);
-    }
-
-    .sweeper-container:hover .sweeper-hover{
-        display: block;
-        transform: scaleX(1);
-    }
+   
 
     .texts{
         padding-right: 64px;

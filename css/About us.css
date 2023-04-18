@@ -172,6 +172,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .about-us__cards .cards__card-each {
@@ -260,6 +261,13 @@
         width: 100%;
     }
 
+    .about-us__cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
     .about-us__cards .cards__card-each {
         height: 650px;
         justify-content: flex-start;
@@ -338,6 +346,13 @@
         width: 100%;
     }
 
+    .about-us__cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
     .about-us__cards .cards__card-each {
         height: 650px;
         justify-content: flex-start;
@@ -411,6 +426,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: row;
     }
 
     .about-us__cards .cards__card-each {
@@ -436,7 +452,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
 
     .container {
         max-width: 480px;
@@ -444,15 +460,15 @@
     }
 
     .about-us__title .title__main {
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
 
     .about-us__title .title__text {
-        font-size: 2.6rem;
+        font-size: 3.3rem;
     }
 
     .about-us__description {
-        padding-right: 16px;
+        padding-right: 20px;
     }
 
     .about-us__description .description__title {
@@ -460,11 +476,11 @@
     }
 
     .about-us__description .description__title .title__name {
-        font-size: 1.8rem;
+        font-size: 2.3rem;
     }
 
     .about-us__description .description__title .title__text {
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
 
     .about-us__cards {
@@ -475,11 +491,10 @@
     }
 
     .about-us__cards .cards__card-each {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .about-us__cards .cards__card-each .card-each__description .description__title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
-
 }

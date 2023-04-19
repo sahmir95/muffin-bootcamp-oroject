@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="../css/Recipes.css">
+        <title>Recipes</title>
+    </head>
+    <body>
+        <div class="section-group">
+            <header>
+                <div class="header">
+                    <div class="navbar">
+                        <div class="navbar__logo">
+                            <img class="navbar__logo__img" src="../assets/images/logo-header.png" alt="logo">
+                        </div>
+                        <div class="navbar__burger-menu">
+                            <div class="navbar__list">
+                                <ul class="navbar__list__main">
+                                    <li class="navbar__list__main__each">
+                                        <a class="navbar__list__main__each__link" href="Home.html">Home</a>
+                                    </li>
+                                    <li class="navbar__list__main__each">
+                                        <a class="navbar__list__main__each__link" href="Recipes.html">Recipes</a>
+                                    </li>
+                                    <li class="navbar__list__main__each">
+                                        <a class="navbar__list__main__each__link" href="Recipe.html">Recipe</a>
+                                    </li>
+                                    <li class="navbar__list__main__each">
+                                        <a class="navbar__list__main__each__link" href="About%20us.html">About us</a>
+                                    </li>
+                                    <li class="navbar__list__main__each">
+                                        <a class="navbar__list__main__each__link" href="Catering.html">Catering</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar__burger-menu__icon">
+                                <img class="navbar__burger-menu__icon__self" src="../assets/images/burger-menu-header.png"
+                                     alt="burger-menu">
+                            </div>
+                            <div class="navbar__burger-menu__button">
+                                <div class="navbar__burger-menu__button__cover"></div>
+                                <span class="navbar__burger-menu__button__self">Buy now</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="burger-menu-screen">
+                        <div class="burger-menu-screen__buttons">
+                            <div class="burger-menu-screen__buttons__close">
+                                <img class="burger-menu-screen__buttons__close__icon" src="../assets/images/close-header.png"
+                                     alt="close">
+                            </div>
+                            <div class="burger-menu-screen__buttons__buy">
+                                <span class="burger-menu-screen__buttons__buy__button">Buy now</span>
+                            </div>
+                        </div>
+                        <div class="burger-menu-screen__option">
+                            <ul class="burger-menu-screen__option__list">
+                                <li class="burger-menu-screen__option__list__each">
+                                    <a class="burger-menu-screen__option__list__each__link" href="Home.html">Home</a>
+                                </li>
+                                <li class="burger-menu-screen__option__list__each">
+                                    <a class="burger-menu-screen__option__list__each__link" href="Recipes.html">Recipes</a>
+                                </li>
+                                <li class="burger-menu-screen__option__list__each">
+                                    <a class="burger-menu-screen__option__list__each__link" href="Recipe.html">Recipe</a>
+                                </li>
+                                <li class="burger-menu-screen__option__list__each">
+                                    <a class="burger-menu-screen__option__list__each__link" href="About%20us.html">About us</a>
+                                </li>
+                                <li class="burger-menu-screen__option__list__each">
+                                    <a class="burger-menu-screen__option__list__each__link" href="Catering.html">Catering</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="burger-menu-screen__social-media">
+                            <i class="fa-brands fa-facebook-f burger-menu-screen__social-media__each"></i>
+                            <i class="fa-brands fa-twitter fa-brands fa-facebook-f burger-menu-screen__social-media__each"></i>
+                            <i class="fa-brands fa-instagram fa-brands fa-facebook-f burger-menu-screen__social-media__each"></i>
+                        </div>
+                    </div>
+                    <div class="black-cover"></div>
+                </div>
+            </header>
+                <!-- title site -->
+                <div class="section-top">
+                    <div class="section-top__main">
+                        <div class="section-top__main__first">
+                            <h6>RECIPES</h6>
+                            <h2>Discover our amazing dishes!</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectin__filter">
+                    <div class="container">
+                        <div class="items">
+                            <div class="item">
+                                <div class="filter">Filter by</div>
+                              </div>
+                          <div class="item" data-content="Uncategorized">
+                            <a href="">
+                                <i class="fa-regular fa-paste"></i> Categories
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="">
+                                <i class="fa-solid fa-tag"></i> Tag
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                          </div>
+                          <div class="item" data-content="Content 4">
+                            <a href="">
+                                <i class="fa-solid fa-user"></i>Authors
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                          </div>
+                          <div class="item" data-content="Content 5">
+                            <a href="">
+                                <i class="fa-solid fa-xmark"></i>Show all
+                            </a>
+                          </div>
+                        </div>
+                        <div class="modal">
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p class="modal-text"></p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="wrapper-image">
+                    <!-- first image -->
+                    <div class="section-image">
+                        <div class="section-image__box">
+                            <div class="image-box">
+                                <img src="../assets/images/recioes_recipes1.jpg" alt="food">
+                            </div>
+                            <div class="image__text">
+                                <div class="image__text-title">
+                                    <span class="title-tx">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Muffin Group</a>
+                                    </span>
+                                    <span class="title-tx2 at">at</span>
+                                    <span class="title-tx3">
+                                        <i class="fa-regular fa-clock"></i>July 12, 2018</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>
+                                        <a href="">Spaghetti with tomato sauce</a>
+                                    </h2>
+                                </div>
+                                <div class="text-desc">
+                                    <p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
+                                        ligula. Ut molestie ultricies porta urna.</p>
+                                </div>
+                                <div class="footer-post">
+                                    <div class="btn-heart">
+                                        <button id="like-button">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="like-count">55</span>
+                                        </button>
+                                    </div>
+                                    <div class="link-readmore">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <a href="">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second image -->
+                    <div class="section-image">
+                        <div class="section-image__box">
+                            <div class="image-box">
+                                <img src="../assets/images/recipes_recipes2.jpg" alt="food">
+                            </div>
+                            <div class="image__text">
+                                <div class="image__text-title">
+                                    <span class="title-tx">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Muffin Group</a>
+                                    </span>
+                                    <span class="title-tx2 at">at</span>
+                                    <span class="title-tx3">
+                                        <i class="fa-regular fa-clock"></i>July 12, 2018</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>
+                                        <a href="">Seafood soup</a>
+                                    </h2>
+                                </div>
+                                <div class="text-desc">
+                                    <p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
+                                        ligula. Ut molestie ultricies porta urna.</p>
+                                </div>
+                                <div class="footer-post">
+                                    <div class="btn-heart">
+                                        <button id="like-button2">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="like-count">64</span>
+                                        </button>
+                                    </div>
+                                    <div class="link-readmore">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <a href="">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third image -->
+                    <div class="section-image">
+                        <div class="section-image__box">
+                            <div class="image-box">
+                                <img src="../assets/images/recipes_recipes3.jpg" alt="food">
+                            </div>
+                            <div class="image__text">
+                                <div class="image__text-title">
+                                    <span class="title-tx">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Muffin Group</a>
+                                    </span>
+                                    <span class="title-tx2 at">at</span>
+                                    <span class="title-tx3">
+                                        <i class="fa-regular fa-clock"></i>July 12, 2018</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>
+                                        <a href="">Oriental soup</a>
+                                    </h2>
+                                </div>
+                                <div class="text-desc">
+                                    <p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
+                                        ligula. Ut molestie ultricies porta urna.</p>
+                                </div>
+                                <div class="footer-post">
+                                    <div class="btn-heart">
+                                        <button id="like-button3">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="like-count">27</span>
+                                        </button>
+                                    </div>
+                                    <div class="link-readmore">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <a href="">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4th image -->
+                    <div class="section-image">
+                        <div class="section-image__box">
+                            <div class="image-box">
+                                <img src="../assets/images/recipes_recipes4.jpg" alt="food">
+                            </div>
+                            <div class="image__text">
+                                <div class="image__text-title">
+                                    <span class="title-tx">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Muffin Group</a>
+                                    </span>
+                                    <span class="title-tx2 at">at</span>
+                                    <span class="title-tx3">
+                                        <i class="fa-regular fa-clock"></i>July 12, 2018</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>
+                                        <a href="">Toast with cream and strawberries</a>
+                                    </h2>
+                                </div>
+                                <div class="text-desc">
+                                    <p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
+                                        ligula. Ut molestie ultricies porta urna.</p>
+                                </div>
+                                <div class="footer-post">
+                                    <div class="btn-heart">
+                                        <button id="like-button4">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="like-count">27</span>
+                                        </button>
+                                    </div>
+                                    <div class="link-readmore">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <a href="">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5th image -->
+                    <div class="section-image">
+                        <div class="section-image__box">
+                            <div class="image-box">
+                                <img src="../assets/images/_recipes5.jpg" alt="food">
+                            </div>
+                            <div class="image__text">
+                                <div class="image__text-title">
+                                    <span class="title-tx">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Muffin Group</a>
+                                    </span>
+                                    <span class="title-tx2 at">at</span>
+                                    <span class="title-tx3">
+                                        <i class="fa-regular fa-clock"></i>July 12, 2018</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>
+                                        <a href="">Mixed chef’s salad</a>
+                                    </h2>
+                                </div>
+                                <div class="text-desc">
+                                    <p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
+                                        ligula. Ut molestie ultricies porta urna.</p>
+                                </div>
+                                <div class="footer-post">
+                                    <div class="btn-heart">
+                                        <button id="like-button5">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="like-count">27</span>
+                                        </button>
+                                    </div>
+                                    <div class="link-readmore">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <a href="">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6th image -->
+                    <div class="section-image">
+                        <div class="section-image__box">
+                            <div class="image-box">
+                                <img src="../assets/images/-recipes6.jpg" alt="food">
+                            </div>
+                            <div class="image__text">
+                                <div class="image__text-title">
+                                    <span class="title-tx">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Muffin Group</a>
+                                    </span>
+                                    <span class="title-tx2 at">at</span>
+                                    <span class="title-tx3">
+                                        <i class="fa-regular fa-clock"></i>July 12, 2018</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>
+                                        <a href="">Thailand rice food</a>
+                                    </h2>
+                                </div>
+                                <div class="text-desc">
+                                    <p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
+                                        ligula. Ut molestie ultricies porta urna.</p>
+                                </div>
+                                <div class="footer-post">
+                                    <div class="btn-heart">
+                                        <button id="like-button6">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="like-count">27</span>
+                                        </button>
+                                    </div>
+                                    <div class="link-readmore">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <a href="">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7th image -->
+                    <div class="section-image">
+                        <div class="section-image__box">
+                            <div class="image-box">
+                                <img src="../assets/images/recipe7.jpg" alt="food">
+                            </div>
+                            <div class="image__text">
+                                <div class="image__text-title">
+                                    <span class="title-tx">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Muffin Group</a>
+                                    </span>
+                                    <span class="title-tx2 at">at</span>
+                                    <span class="title-tx3">
+                                        <i class="fa-regular fa-clock"></i>July 12, 2018</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>
+                                        <a href="">Grilled chicken steak with teriyaki sauce</a>
+                                    </h2>
+                                </div>
+                                <div class="text-desc">
+                                    <p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
+                                        ligula. Ut molestie ultricies porta urna.</p>
+                                </div>
+                                <div class="footer-post">
+                                    <div class="btn-heart">
+                                        <button id="like-button7">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="like-count">27</span>
+                                        </button>
+                                    </div>
+                                    <div class="link-readmore">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <a href="">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8th image -->
+                    <div class="section-image">
+                        <div class="section-image__box">
+                            <div class="image-box">
+                                <img src="../assets/images/g82-960x720.jpg" alt="food">
+                            </div>
+                            <div class="image__text">
+                                <div class="image__text-title">
+                                    <span class="title-tx">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Muffin Group</a>
+                                    </span>
+                                    <span class="title-tx2 at">at</span>
+                                    <span class="title-tx3">
+                                        <i class="fa-regular fa-clock"></i>July 12, 2018</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>
+                                        <a href="">Vegetable salad</a>
+                                    </h2>
+                                </div>
+                                <div class="text-desc">
+                                    <p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
+                                        ligula. Ut molestie ultricies porta urna.</p>
+                                </div>
+                                <div class="footer-post">
+                                    <div class="btn-heart">
+                                        <button id="like-button8">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="like-count">27</span>
+                                        </button>
+                                    </div>
+                                    <div class="link-readmore">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <a href="">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9th image -->
+                    <div class="section-image">
+                        <div class="section-image__box">
+                            <div class="image-box">
+                                <img src="../assets/images/9.jpg" alt="food">
+                            </div>
+                            <div class="image__text">
+                                <div class="image__text-title">
+                                    <span class="title-tx">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Muffin Group</a>
+                                    </span>
+                                    <span class="title-tx2 at">at</span>
+                                    <span class="title-tx3">
+                                        <i class="fa-regular fa-clock"></i>July 12, 2018</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>
+                                        <a href="">Red lunch</a>
+                                    </h2>
+                                </div>
+                                <div class="text-desc">
+                                    <p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
+                                        ligula. Ut molestie ultricies porta urna.</p>
+                                </div>
+                                <div class="footer-post">
+                                    <div class="btn-heart">
+                                        <button id="like-button9">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="like-count">27</span>
+                                        </button>
+                                    </div>
+                                    <div class="link-readmore">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <a href="">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="footer__inner">
+                      <div class="footer__links">
+                        <div class="footer__section">
+                          <ul class="footer__section__list">
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Lorem ipsum</span
+                              >
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Praesent pretium</span
+                              >
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Pellentesque</span
+                              >
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text">Aliquam</span>
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Lorem ipsum</span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="footer__section">
+                          <ul class="footer__section__list">
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Lorem ipsum</span
+                              >
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Etiam dapibus</span
+                              >
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text">Nunc sit</span>
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Lorem ipsum</span
+                              >
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text">Nunc sit</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="footer__section">
+                          <ul class="footer__section__list">
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Praesent pretium</span
+                              >
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Pellentesque</span
+                              >
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text">Aliquam</span>
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text"
+                                >Etiam dapibus</span
+                              >
+                            </li>
+                            <li class="footer__section__list__each">
+                              <i
+                                class="fa-solid fa-arrow-right-long footer__section__list__each__icon"
+                              ></i>
+                              <span class="footer__section__list__each__text">Aliquam</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="footer__section footer__section--data">
+                          <h5 class="footer__section__title">Be Recipes</h5>
+                          <span class="footer__section__info footer__section__info--address">
+                            Level 13, 2 Elizabeth St,
+                            <br />
+                            Melbourne, Victoria 3000
+                          </span>
+                          <span class="footer__section__info footer__section__info--email"
+                            >noreply@envato.com</span
+                          >
+                          <span class="footer__section__info">+61 (0) 3 8376 6284</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer__social-media">
+                      <div class="footer__social-media__arrow-top">
+                        <a class="footer__social-media__arrow-top__icon" href="#top">
+                          <i
+                            class="fa-solid fa-chevron-up footer__social-media__arrow-top__icon__self"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="footer__social-media__copy-right">
+                        <p class="footer__social-media__copy-right__text">
+                          © 2023 Betheme by
+                          <span
+                            class="footer__social-media__copy-right__text footer__social-media__copy-right__text--green"
+                            >Muffin group</span
+                          >
+                          | All Rights Reserved | Powered by
+                          <span
+                            class="footer__social-media__copy-right__text footer__social-media__copy-right__text--green"
+                            >WordPress</span
+                          >
+                        </p>
+                      </div>
+                      <div class="footer__social-media__icon">
+                        <i
+                          class="fa-brands fa-facebook-f footer__social-media__icon__self"
+                        ></i>
+                        <i class="fa-brands fa-twitter footer__social-media__icon__self"></i>
+                        <i
+                          class="fa-brands fa-instagram footer__social-media__icon__self"
+                        ></i>
+                      </div>
+                    </div>
+                  </footer>
+            </div>
+            <script>
+                const items = document.querySelectorAll('.item');
+const modal = document.querySelector('.modal');
+const modalText = document.querySelector('.modal-text');
+const close = document.querySelector('.close');
+
+items.forEach((item) => {
+  item.addEventListener('click', () => {
+    const content = item.getAttribute('data-content');
+    modalText.textContent = content;
+    modal.style.display = 'block';
+  });
+});
+
+close.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+            </script>
+        <script src="../js/script.js"></script>
+        <script src="../js/header.js"></script>
+    </body>
+</html>

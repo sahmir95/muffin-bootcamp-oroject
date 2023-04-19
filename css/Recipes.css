@@ -1,0 +1,2486 @@
+@import"General.css";
+@import"Footer.css";
+@import"Header.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* mobile first */
+@media screen and (min-width:320px) and (max-width:479px){
+    .section-group {
+        min-width: 320px;
+        min-height: 100vh;
+    }
+    .section__top {
+        width: 320px;
+        height: 298px;
+    }
+    .section-top__main {
+        padding-top: 95px;
+        padding-bottom: 75px;
+    }
+    .section-top__main__first {
+        width: 300px;
+        height: 113px;
+        padding: 0 33px;
+    }
+    .section-top__main__first h6 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--primary-green);
+        margin: 0 0 15px;
+        font-family: var(--Poppins);
+        line-height: 19px;
+        letter-spacing: 1px;
+        text-size-adjust: auto;
+    }
+    .section-top__main__first h2 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        font-family: var(--Merriweather);
+        color: var(--primary-main);
+        line-height: 32px;
+        text-size-adjust: auto;
+    }
+    .section-filter {
+        padding: 0 33px;
+        width: 320px;
+        height: 98px;
+    }
+    .section-filter__box {
+        width: 254px;
+        height: 68px;
+    }
+    .box-col {
+        background: url("../assets/images/stripes_5_b.png");
+    }
+    .label{
+        display: none;
+    }
+    .filter-icon{
+        margin: 8px ;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px;
+        padding-inline-start: 15px;
+    }
+    .filter-icon a{
+        color: var(--primary-green);
+        font-size: 13px;
+        font-family: var(--Poppins);
+        font-weight: 300;
+    }
+    .list-item{
+        margin: 0 5px;
+      }
+    .filter-icon:hover{
+        color: #089a3f;
+        background-color: transparent;
+        text-decoration:underline #089a3f;
+        cursor: pointer;
+    }
+    .show{
+    }
+    .section-image {
+        min-width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 33px;
+    }
+    .image-box {
+        width: 100%;
+        height: auto;
+    }
+    .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all .4s ease;
+    }
+    .image-box:hover img{
+        transform: scale(1.1);
+    }
+    .image__text {
+        padding: 20px 20px 0;
+    }
+    .title-tx a {
+        margin: 5px;
+        color: var(--secondary-150);
+        border-bottom: 1px dotted var(--secondary-150);
+        font-size: 1.3rem;
+        font-weight: 300;
+        font-family: var(--Poppins);
+        cursor: pointer;
+    }
+    .title-tx i {
+        color: var(--secondary-150);
+    }
+    .title-tx {
+        color: var(--secondary-150);
+    }
+    .title-tx2 {
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 {
+        margin: 5px;
+        text-decoration: none;
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 i {
+        margin: 4px;
+    }
+    .post-title h2,
+a {
+        font-family: var(--Merriweather);
+        font-size: 1.6rem;
+        line-height: 24px;
+        color: var(--primary-main);
+        font-weight: bold;
+    }
+    .text-desc p {
+        width: 214px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 20px;
+        font-stretch: 100%;
+        color: var(--primary-light);
+    }
+    .footer-post {
+        background-color: #00000005;
+        margin: 20px -20px;
+        padding: 7px 15px;
+        overflow: hidden;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* first */
+    #like-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        font-weight: 400;
+    }
+    
+    #like-button.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* second */
+    #like-button2 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button2 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        font-weight: 400;
+    }
+    
+    #like-button2.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button2 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* third */
+    #like-button3 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button3 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button3.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button3 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 4th */
+    #like-button4 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button4 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button4.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button4 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 5th */
+    #like-button5 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button5 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button5.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button5 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 6th */
+    #like-button6 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button6 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button6.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button6 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 7th */
+    #like-button7 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button7 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button7.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button7 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 8th */
+    #like-button8 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button8 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button8.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button8 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 9th */
+    #like-button9 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button9 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button9.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button9 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    .link-readmore {
+        padding: 0 0 0 10px;
+        border-left: 0.8px solid #00000014;
+    }
+    .link-readmore i {
+        color: var(--secondary-150);
+        margin: 0 2.6px;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 400;
+    
+    }
+    .link-readmore a {
+        color: var(--primary-green);
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        line-height: 30px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}
+/* tablet */
+@media screen and (min-width:479px) and (max-width:767px) {
+    .section-top__main {
+        padding-top: 95px;
+        padding-bottom: 75px
+    }
+    .section-top__main__first {
+        padding: 0 33px;
+    }
+    .section-top__main__first h6 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--primary-green);
+        margin: 0 0 15px;
+        font-family: var(--Poppins);
+        line-height: 19px;
+        word-spacing: 2px;
+        text-size-adjust: auto;
+    }
+    .section-top__main__first h2 {
+        font-size: 3.3rem;
+        font-weight: 700;
+        font-family: var(--Merriweather);
+        color: var(--primary-main);
+        line-height: 41px;
+        text-size-adjust: auto;
+    }
+    .section-filter {
+        position: relative;
+        padding: 0 33px;
+        width: auto;
+        padding-bottom: 30px;
+    }
+    .label{
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+        margin: 0 15px 0 0;
+        color: var(--secondary-150);
+    }
+    .filter-icon{
+        margin: 8px ;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .filter-icon a{
+        color: var(--primary-green);
+        font-size: 13px;
+        font-family: var(--Poppins);
+        font-weight: 300;
+    }
+    .filter-icon:hover{
+        color: #089a3f;
+        background-color: transparent;
+        text-decoration:underline #089a3f;
+        cursor: pointer;
+    }
+    .list-item{
+      margin: 0 5px;
+    }
+    .show{
+        position: absolute;
+        right: 50px;
+        bottom: 30px
+    }
+    .box-col {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        background: url("../assets/images/stripes_5_b.png");
+    }
+    .wrapper-image{
+        min-width: 481px;
+        padding: 0px 30px;
+    }
+    .section-image {
+        width: 100%;
+    }
+    .section-image__box {
+        width: auto;
+    }
+    .image-box {
+        width: 100%;
+        height: auto;
+    }
+    .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all .4s ease;
+    }
+    .image-box:hover img{
+        transform: scale(1.1);
+    }
+    .image__text {
+        padding: 20px 20px 0;
+    }
+    .title-tx a {
+        margin: 5px;
+        color: var(--secondary-150);
+        border-bottom: 1px dotted var(--secondary-150);
+        font-size: 1.3rem;
+        font-weight: 300;
+        font-family: var(--Poppins);
+        cursor: pointer;
+    }
+    .title-tx i {
+        color: var(--secondary-150);
+    }
+    .title-tx {
+        color: var(--secondary-150);
+    }
+    .image__text-title {}
+    .title-tx2 {
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 {
+        margin: 5px;
+        text-decoration: none;
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 i {
+        margin: 4px;
+    }
+    .post-title{
+        min-width: 374px;
+        margin: 0 0 15px;
+    }
+    .post-title h2,
+    a {
+        /* font-family: var(--Merriweather); */
+        font-size: 1.7rem;
+        line-height: 24px;
+        color: var(--primary-main);
+        font-weight: 700;
+    }
+    .text-desc p {
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 20px;
+        font-stretch: 100%;
+        margin-bottom: 15px;
+        color: var(--primary-light);
+    }
+    .footer-post {
+        background-color: #00000005;
+        margin: 20px -20px;
+        padding: 7px 15px;
+        overflow: hidden;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* first */
+    #like-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        font-weight: 400;
+    }
+    
+    #like-button.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* second */
+    #like-button2 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button2 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button2.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button2 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* third */
+    #like-button3 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button3 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button3.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button3 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 4th */
+    #like-button4 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button4 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button4.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button4 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 5th */
+    #like-button5 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button5 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button5.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button5 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 6th */
+    #like-button6 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button6 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button6.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button6 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 7th */
+    #like-button7 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button7 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button7.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button7 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 8th */
+    #like-button8 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button8 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button8.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button8 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 9th */
+    #like-button9 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button9 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button9.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button9 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    .link-readmore {
+        padding: 0 0 0 10px;
+        border-left: 0.8px solid #00000014;
+    }
+    .link-readmore i {
+        color: var(--secondary-150);
+        margin: 0 2.6px;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 400;
+
+    }
+    .link-readmore a {
+        color: var(--primary-green);
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        line-height: 30px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    /* baraye inke to js be moshkel nakhorim bara har aks id joda dadam */
+    #like-button2 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    #like-button2 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--secondary-150);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        /* font-weight: 400; */
+    }
+
+    #like-button2 .liked i {
+        color: var(--primary-green)!;
+    }
+    #like-button2 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+}
+@media screen and (min-width:767px) and (max-width:960px) {
+    .section-top__main {
+        width: auto;
+        padding-top: 95px;
+        padding-bottom: 75px;
+        background-image: url("../assets/images/home_recipes2_sectionbg4.jpg");
+        background-position-x: 50%;
+        background-position-y: 100%;
+    }
+    .section-top__main__first {
+        min-width: 768px;
+        padding: 0 33px;
+
+    }
+    .section-top__main__first h6 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--primary-green);
+        margin: 0 0 15px;
+        font-family: var(--Poppins);
+        line-height: 21px;
+        letter-spacing: 2px;
+        text-size-adjust: auto;
+    }
+    .section-top__main__first h2 {
+        font-size: 3.7rem;
+        font-weight: 700;
+        font-family: var(--Merriweather);
+        color: var(--primary-main);
+        line-height: 46px;
+        text-size-adjust: auto;
+    }
+    .section-filter {
+        padding: 0 33px;
+        min-width: 768px;
+        max-width: 960px;
+        height: 83px;
+        position: relative;
+    }
+    .label{
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+        margin: 0 15px 0 0;
+        color: var(--secondary-150);
+    }
+    .show{
+        position: absolute;
+        right: 50px;
+        top: 15px;
+    }
+    .filter-icon{
+        margin: 0 8px ;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .filter-icon a{
+        color: var(--primary-green);
+        font-size: 13px;
+        font-family: var(--Poppins);
+        font-weight: 300;
+    }
+    .list-item{
+        margin: 0 5px;
+      }
+    .filter-icon:hover{
+        color: #089a3f;
+        cursor: pointer;
+    }
+    .box-col {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        background: url("../assets/images/stripes_5_b.png");
+    }
+    .wrapper-image{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 767px;
+        margin-left: 8px;
+        padding: 0 33px;
+    }
+    .section-image{
+        width: 33.33%;
+    }
+    .section-image__box {
+        width: auto;
+        padding: 7px;
+    }
+    .image-box {
+        width: 100%;
+        height: auto;
+    }
+    .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all .4s ease;
+    }
+    .image-box:hover img{
+        transform: scale(1.1);
+    }
+    .image__text {
+        padding: 20px 20px 0;
+    }
+    .title-tx a {
+        margin: 5px;
+        color: var(--secondary-150);
+        border-bottom: 1px dotted var(--secondary-150);
+        font-size: 1.3rem;
+        font-weight: 300;
+        font-family: var(--Poppins);
+        cursor: pointer;
+    }
+    .title-tx i {
+        color: var(--secondary-150);
+    }
+    .title-tx {
+        color: var(--secondary-150);
+    }
+    .image__text-title {
+        width: 177px;
+    }
+    .title-tx2 {
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 {
+        margin: 5px;
+        text-decoration: none;
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 i {
+        margin: 4px;
+    }
+    .post-title h2,
+    a {
+        font-family: var(--Merriweather);
+        font-size: 1.7rem;
+        line-height: 27px;
+        color: var(--primary-main);
+        font-weight: 700;
+    }
+    .text-desc p {
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 20px;
+        font-stretch: 100%;
+        color: var(--primary-light);
+    }
+    .footer-post {
+        background-color: #00000005;
+        margin: 20px -20px;
+        padding: 7px 15px;
+        overflow: hidden;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* first */
+    #like-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        font-weight: 400;
+    }
+    
+    #like-button.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* second */
+    #like-button2 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button2 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        font-weight: 400;
+    }
+    
+    #like-button2.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button2 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* third */
+    #like-button3 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button3 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button3.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button3 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 4th */
+    #like-button4 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button4 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button4.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button4 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 5th */
+    #like-button5 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button5 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button5.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button5 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 6th */
+    #like-button6 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button6 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button6.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button6 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 7th */
+    #like-button7 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button7 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button7.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button7 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 8th */
+    #like-button8 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button8 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button8.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button8 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 9th */
+    #like-button9 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button9 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button9.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button9 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    .link-readmore {
+        padding: 0 0 0 10px;
+        border-left: 0.8px solid #00000014;
+    }
+    .link-readmore i {
+        color: var(--secondary-150);
+        margin: 0 2.6px;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 400;
+
+    }
+    .link-readmore a {
+        color: var(--primary-green);
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        line-height: 30px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}
+/* desktop */
+@media screen and (min-width:960px) and (max-width:1240px) {
+    .section__top {
+        min-width: 960px;
+        height: 314px;
+        /* display: flex; */
+    }
+    .section-top__main {
+        min-width: 960px;
+        padding-top: 95px;
+        padding-bottom: 75px;
+        background-image: url("../assets/images/home_recipes2_sectionbg4.jpg");
+        background-position-x: 50%;
+        background-position-y: 100%;
+        
+    }
+    .section-top__main__first {
+        width: 960px;
+        height: 109px;
+        padding: 0 33px;
+    }
+    .section-top__main__first h6 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--primary-green);
+        margin: 0 0 15px;
+        font-family: var(--Poppins);
+        line-height: 21px;
+        letter-spacing: 2px;
+        text-size-adjust: auto;
+    }
+    .section-top__main__first h2 {
+        font-size: 3.7rem;
+        font-weight: 700;
+        font-family: var(--Merriweather);
+        /* color: var(--primary-main); */
+        line-height: 46px;
+        text-size-adjust: auto;
+    }
+    .section-filter {
+        padding: 0 33px;
+        min-width: 960px;
+        height: 87px;
+    }
+    .label{
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+        margin: 0 15px 0 0;
+        color: var(--secondary-150);
+    }
+    .filter-icon{
+        margin: 0 2px ;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 15px;
+        /* padding-inline-start: 15px; */
+    }
+    .filter-icon a{
+        color: var(--primary-green);
+        font-size: 13px;
+        font-family: var(--Poppins);
+        font-weight: 300;
+    }
+    .list-item{
+        margin: 0 5px;
+      }
+    .filter-icon:hover{
+        color: #089a3f;
+        background-color: transparent;
+        text-decoration:underline #089a3f;
+        cursor: pointer;
+    }
+    .section-filter__box {
+    }
+    .box-col {
+        min-width: 900px;
+        background: url("../assets/images/stripes_5_b.png");
+    }
+    .wrapper-image{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 960px;
+        padding: 0 33px;
+    }
+    .section-image{
+        width: 33.33%;
+    }
+    .section-image__box{
+        width: 100%;
+        /* height: auto; */
+    }
+    .section-image__box {
+        width: auto;
+    }
+    .image-box {
+        width: 100%;
+        height: auto;
+    }
+    .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .image__text {
+        padding: 20px 20px 0;
+    }
+    .title-tx a {
+        margin: 5px;
+        color: var(--secondary-150);
+        border-bottom: 1px dotted var(--secondary-150);
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-family: var(--Poppins);
+        cursor: pointer;
+    }
+    .title-tx i {
+        color: var(--secondary-150);
+        line-height: 15px;
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .title-tx {
+        color: var(--secondary-150);
+    }
+    .image__text-title {
+        width: 217px;
+    }
+    .title-tx2 {
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 {
+        margin: 5px;
+        text-decoration: none;
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 i {
+        margin: 4px;
+        line-height: 15px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .post-title h2,
+    a {
+        font-family: var(--Merriweather);
+        font-size: 2rem;
+        line-height: 27px;
+        color: var(--primary-main);
+        font-weight: 700;
+    }
+    .text-desc p {
+        font-family: var(--Poppins);
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 27px;
+        font-stretch: 100%;
+        margin-bottom: 15px;
+        color: var(--primary-light);
+    }
+    .footer-post {
+        background-color: #00000005;
+        margin: 20px -20px;
+        padding: 7px 15px;
+        overflow: hidden;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* first */
+    #like-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        font-weight: 400;
+    }
+    
+    #like-button.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* second */
+    #like-button2 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button2 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        font-weight: 400;
+    }
+    
+    #like-button2.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button2 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* third */
+    #like-button3 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button3 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button3.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button3 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 4th */
+    #like-button4 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button4 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button4.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button4 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 5th */
+    #like-button5 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button5 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button5.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button5 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 6th */
+    #like-button6 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button6 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button6.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button6 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 7th */
+    #like-button7 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button7 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button7.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button7 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 8th */
+    #like-button8 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button8 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button8.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button8 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 9th */
+    #like-button9 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button9 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button9.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button9 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    .link-readmore {
+        padding: 0 0 0 10px;
+        border-left: 0.8px solid #00000014;
+    }
+    .link-readmore i {
+        color: var(--secondary-150);
+        margin: 0 2.6px;
+        font-size: 15px;
+        line-height: 15px;
+        font-weight: 400;
+
+    }
+    .link-readmore a {
+        color: var(--primary-green);
+        font-family: var(--Poppins);
+        font-size: 1.5rem;
+        line-height: 30px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width:1240px){
+    .section__top {
+        min-width: 1240px;
+        height: 314px;
+    }
+    .section-top__main {
+        min-width: 1241px;
+        padding-top: 95px;
+        padding-bottom: 75px;
+        background-image: url("../assets/images/home_recipes2_sectionbg4.jpg");
+        background-position-x: 50%;
+        background-position-y: 100%;
+    }
+    .section-top__main__first {
+        width: 1240px;
+        max-width: 1240px;
+        height: 109px;
+        padding: 0 80px;
+    }
+    .section-top__main__first h6 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--primary-green);
+        margin: 0 0 15px;
+        font-family: var(--Poppins);
+        line-height: 21px;
+        letter-spacing: 2px;
+        text-size-adjust: auto;
+    }
+    .section-top__main__first h2 {
+        font-size: 4.4rem;
+        font-weight: 700;
+        font-family: var(--Merriweather);
+        /* color: var(--primary-main); */
+        margin: 0 0 15px;
+        line-height: 46px;
+        text-size-adjust: auto;
+    }
+    .section-filter {
+        padding: 0 33px;
+        min-width: 1000px;
+        height: 83px;
+        position: relative;
+    }
+    .label{
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+        margin: 0 15px 0 0;
+        color: var(--secondary-150);
+    }
+    .filter-icon{
+        margin: 0 2px ;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px;
+        margin: 0 15px;
+        padding-bottom: 15px;
+    }
+    .filter-icon a{
+        color: var(--primary-green);
+        font-size: 13px;
+        font-family: var(--Poppins);
+        font-weight: 300;
+    }
+    .show{
+        position: absolute;
+        right: 50px;
+        top: 20px;
+    }
+    .list-item{}
+    .filter-icon:hover{
+        color: #089a3f;
+        background-color: transparent;
+        text-decoration:underline #089a3f;
+        cursor: pointer;
+    }
+    .box-co1-one{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    .section-filter__box {}
+    .box-col {
+        padding: 15px;
+        width: 1000px;
+        background: url("../assets/images/stripes_5_b.png");
+    }
+    .wrapper-image{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 1240px;
+        padding: 0 80px;
+        margin-left: 10px;
+    }
+    .section-image{
+        width: 33.33%;
+    }
+    .section-image__box{
+        width: 100%;
+    }
+    .section-image__box {
+        width: 338px;
+    }
+    .image-box {
+        width: 100%;
+        height: auto;
+    }
+    .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all .4s ease;
+    }
+    .image-box:hover img{
+        transform: scale(1.1);
+    }
+    .image__text {
+        padding: 20px 20px 0;
+    }
+    .title-tx a {
+        margin: 5px;
+        color: var(--secondary-150);
+        border-bottom: 1px dotted var(--secondary-150);
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 27px;
+        font-family: var(--Poppins);
+        cursor: pointer;
+    }
+    .title-tx i {
+        color: var(--secondary-150);
+        font-weight: 800;
+        font-size: 15px;
+    }
+    .title-tx {
+        color: var(--secondary-150);
+    }
+    .image__text-title {}
+    .title-tx2 {
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 {
+        margin: 5px;
+        text-decoration: none;
+        color: var(--secondary-150);
+        font-size: 1.3rem;
+        font-family: var(--Poppins);
+    }
+    .title-tx3 i {
+        margin: 4px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .post-title h2,
+    a {
+        font-family: var(--Merriweather);
+        font-size: 2rem;
+        line-height: 24px;
+        color: var(--primary-main);
+        font-weight: 700;
+        line-height: 27px;
+    }
+    .text-desc p {
+        font-family: var(--Poppins);
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 27px;
+        font-stretch: 100%;
+        margin-bottom: 15px;
+        color: var(--primary-light);
+    }
+    .footer-post {
+        background-color: #00000005;
+        margin: 20px -20px;
+        padding: 7px 15px;
+        overflow: hidden;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* first */
+    #like-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        font-weight: 400;
+    }
+    
+    #like-button.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* second */
+    #like-button2 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button2 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        font-weight: 400;
+    }
+    
+    #like-button2.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button2 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* third */
+    #like-button3 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button3 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button3.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button3 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 4th */
+    #like-button4 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button4 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button4.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button4 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 5th */
+    #like-button5 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button5 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button5.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button5 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 6th */
+    #like-button6 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button6 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button6.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button6 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 7th */
+    #like-button7 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button7 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button7.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button7 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 8th */
+    #like-button8 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button8 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button8.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button8 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    /* 9th */
+    #like-button9 {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    #like-button9 i {
+        display: inline-block;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: color 0.2s ease-out;
+        margin: 0 3px;
+        /* line-height: 16px; */
+        font-weight: 400;
+    }
+    
+    #like-button9.liked i {
+        color: var(--primary-green);
+        font-weight: 800;
+    }
+    
+    #like-button9 .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 30px;
+        color: var(--secondary-150);
+    }
+    .link-readmore {
+        padding: 0 0 0 10px;
+        border-left: 0.8px solid #00000014;
+    }
+    .link-readmore i {
+        color: var(--secondary-150);
+        margin: 0 2.6px;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 400;
+
+    }
+    .link-readmore a {
+        color: var(--primary-green);
+        font-family: var(--Poppins);
+        font-size: 1.3rem;
+        line-height: 30px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/images/stripes_5_b.png);
+  }
+  
+  .items {
+    display: flex;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .item a{
+    color: var(--primary-green);
+  }
+  .item:last-child {
+    margin-right: 0;
+  }
+  
+  .item i {
+    font-size: 15px;
+    color: var(--primary-green);
+  }
+  .filter{
+    color: var(--secondary-150);
+  }
+  .modal {
+    background-color: var(--primary-green);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 150px;
+  }
+  
+  .close {
+    align-self: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-text {
+    margin: 0;
+  }

@@ -1,9 +1,12 @@
 @import url(font.css);
 @import url(root.css);
+@import url(Footer.css);
+@import url(Header.css);
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 10px;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -233,6 +236,7 @@ body {
 .recipies__bot__right__text {
     font-weight: 300;
     flex-wrap: wrap;
+    font-size: var(--font-size-mobile-para);
 }
 .recipies__cards {
     width: 100%;
@@ -272,6 +276,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     column-gap: 4px;
+    font-size: var(--font-size-mobile-para);
 }
 .card__texts__top {
     font-weight: 300;
@@ -283,6 +288,7 @@ body {
 }
 .muffin__link {
     color: var(--secondary-150);
+    font-size: var(--font-size-mobile-para);
     text-decoration-style: dotted;
     text-underline-position: under;
 }
@@ -346,6 +352,7 @@ body {
 }
 .like__text {
     color: var(--secondary-150);
+    font-size: var(--font-size-mobile-para);
     cursor: pointer;
 }
 .card__bot__right {
@@ -362,6 +369,10 @@ body {
 }
 .page__text {
     color: var(--primary-green);
+    font-size: var(--font-size-mobile-para);
+}
+.page__text__link {
+    font-size: var(--font-size-mobile-para);
 }
 .page__text__link:hover {
     text-decoration: underline;
@@ -842,6 +853,10 @@ body {
     .test {
         padding-bottom: 390px;
     }
+    .page__text {
+        line-height: 30px;
+        font-size: var(--font-size-tablet-para);
+    }
 }
 @media screen and (min-width: 960px){
     .top__welcome {
@@ -945,7 +960,7 @@ body {
         line-height: 27px;
         font-size: var(--font-size-biglaptop-quote);
     }
-    .page__text {
+    .page__text__link {
         line-height: 30px;
         font-size: var(--font-size-biglaptop-quote);
     }
@@ -1051,6 +1066,9 @@ body {
     }
     .test {
         padding-bottom: 390px;
+    }
+    .muffin__link {
+        font-size: var(--font-size-biglaptop-quote);
     }
 }
 @media screen and (min-width: 1240px){

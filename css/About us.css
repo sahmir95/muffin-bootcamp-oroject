@@ -1,4 +1,7 @@
 @import "General.css";
+@import "Header.css";
+@import "Footer.css";
+@import "Home.css";
 
 * {
     margin: 0;
@@ -172,10 +175,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     flex-direction: column;
-=======
->>>>>>> origin
 }
 
 .about-us__cards .cards__card-each {
@@ -264,7 +264,6 @@
         width: 100%;
     }
 
-<<<<<<< HEAD
     .about-us__cards {
         display: flex;
         align-items: center;
@@ -272,8 +271,6 @@
         flex-direction: row;
     }
 
-=======
->>>>>>> origin
     .about-us__cards .cards__card-each {
         height: 650px;
         justify-content: flex-start;
@@ -352,7 +349,6 @@
         width: 100%;
     }
 
-<<<<<<< HEAD
     .about-us__cards {
         display: flex;
         align-items: center;
@@ -360,8 +356,6 @@
         flex-direction: row;
     }
 
-=======
->>>>>>> origin
     .about-us__cards .cards__card-each {
         height: 650px;
         justify-content: flex-start;
@@ -435,10 +429,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-<<<<<<< HEAD
         flex-direction: row;
-=======
->>>>>>> origin
     }
 
     .about-us__cards .cards__card-each {
@@ -464,19 +455,13 @@
     }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 480px) and (max-width: 767px) {
-=======
-@media screen and (min-width: 320px) and (max-width: 767px) {
->>>>>>> origin
-
     .container {
         max-width: 480px;
         margin: 0 auto;
     }
 
     .about-us__title .title__main {
-<<<<<<< HEAD
         letter-spacing: 2px;
     }
 
@@ -486,8 +471,7 @@
 
     .about-us__description {
         padding-right: 20px;
-=======
-        letter-spacing: 1px;
+    = = = = = = = letter-spacing: 1 px;
     }
 
     .about-us__title .title__text {
@@ -496,7 +480,7 @@
 
     .about-us__description {
         padding-right: 16px;
->>>>>>> origin
+    >>> >>> > origin
     }
 
     .about-us__description .description__title {
@@ -504,19 +488,17 @@
     }
 
     .about-us__description .description__title .title__name {
-<<<<<<< HEAD
         font-size: 2.3rem;
     }
 
     .about-us__description .description__title .title__text {
         letter-spacing: 2px;
-=======
-        font-size: 1.8rem;
+    = = = = = = = font-size: 1.8 rem;
     }
 
     .about-us__description .description__title .title__text {
         letter-spacing: 1px;
->>>>>>> origin
+    >>> >>> > origin
     }
 
     .about-us__cards {
@@ -527,20 +509,10 @@
     }
 
     .about-us__cards .cards__card-each {
-<<<<<<< HEAD
         padding: 0 20px;
     }
 
     .about-us__cards .cards__card-each .card-each__description .description__title {
         font-size: 1.5rem;
     }
-=======
-        padding: 0 10px;
-    }
-
-    .about-us__cards .cards__card-each .card-each__description .description__title {
-        font-size: 1.3rem;
-    }
-
->>>>>>> origin
 }

@@ -2,18 +2,11 @@
 
     /*colors*/
     --primary-green: #20c05c;
-<<<<<<< HEAD
     --primary-main: #222223;
     --primary-light: #242424;
     --secondary-dark: #1e1d26;
-=======
     --primary-green-light: #089a3f;
-    --primary-main: #222223;
-    --primary-light: #242424;
-    --secondary-dark: #1e1d26;
     --secondary-light: #f7f7f7;
-
->>>>>>> origin
 
     --white: #fff;
 
@@ -21,21 +14,11 @@
     --secondary-100: #b3b3b3;
     --secondary-150: #a8a8a8;
     --secondary-200: #747474;
-<<<<<<< HEAD
+    --secondary-400: #444444;
 
     --black: #000;
 
     /*fonts-family*/
-    --Merriweather: "Merriweather", "arial", "sans-serif";
-    --Poppins: "Poppins", "arial", "sans-serif";
-    --Montserrat: "Montserrat", "arial", "sans-serif";
-=======
-    --secondary-400: #444444;
-
-
-    --black: #000;
-
-    /*font-family*/
     --Merriweather: "Merriweather", "arial", "sans-serif";
     --Poppins: "Poppins", "arial", "sans-serif";
     --Montserrat: "Montserrat", "arial", "sans-serif";
@@ -64,5 +47,4 @@
     --font-size-biglaptop-cap: 17px;
     --font-size-biglaptop-quote: 15px;
     --font-size-biglaptop-slide: 30px;
->>>>>>> origin
 }

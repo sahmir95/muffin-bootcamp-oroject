@@ -2,12 +2,11 @@
 
     /*colors*/
     --primary-green: #20c05c;
-    --primary-green-light: #089a3f;
     --primary-main: #222223;
     --primary-light: #242424;
     --secondary-dark: #1e1d26;
+    --primary-green-light: #089a3f;
     --secondary-light: #f7f7f7;
-
 
     --white: #fff;
 
@@ -17,10 +16,9 @@
     --secondary-200: #747474;
     --secondary-400: #444444;
 
-
     --black: #000;
 
-    /*font-family*/
+    /*fonts-family*/
     --Merriweather: "Merriweather", "arial", "sans-serif";
     --Poppins: "Poppins", "arial", "sans-serif";
     --Montserrat: "Montserrat", "arial", "sans-serif";
